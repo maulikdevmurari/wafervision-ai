@@ -1,7 +1,4 @@
---index-url https://download.pytorch.org/whl/cpu
---extra-index-url https://pypi.org/simple
-
-torch==2.15.0+cpu
+torch @ https://download.pytorch.org/whl/cpu/torch-2.15.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl
 streamlit==1.66.0
 pandas>=2,<3
 numpy>=2,<3
