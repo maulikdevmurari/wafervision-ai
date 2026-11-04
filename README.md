@@ -113,7 +113,7 @@ The interface displays three complementary views:
 
 *Grad-CAM indicates model influence, not proven physical root cause. If the final fused class is `none`, the heatmap still explains the Stage 2 defect classifier—not the final normal decision.*
 
-## 6. Streamlit application
+## 6. Streamlit application: https://wafervision-ai.streamlit.app/
 
 The project's interactive front end is built with **Streamlit**. It supports selecting a sample wafer or uploading a categorical `.npy` wafer map, running both trained CNNs, and displaying:
 
@@ -121,7 +121,7 @@ The project's interactive front end is built with **Streamlit**. It supports sel
 - Stage 1's defect probability,
 - the original wafer, defect mask, and Stage 2 Grad-CAM overlay.
 
-Uploaded `.npy` files must contain a **nonempty 2D array with values `0`, `1`, or `2`**. The deployed interface uses the saved trained checkpoints; no retraining is needed for inference.
+Uploaded `.npy` files must contain a **nonempty 48 x 48 2D array with values `0`, `1`, or `2`**. The deployed interface uses the saved trained checkpoints; no retraining is needed for inference.
 
 ## 7. Limitations and next steps
 
